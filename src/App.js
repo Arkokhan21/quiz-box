@@ -19,6 +19,7 @@ function App() {
         },
         {
           path: '/home',
+          loader: () => fetch('quiz.json'),
           element: <Home></Home>,
         },
 
