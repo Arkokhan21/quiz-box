@@ -21,7 +21,6 @@ const Home = () => {
                 {
                     quiztopics.data.map(quiztopic => <Quiztopic key={quiztopic.id} quiztopic={quiztopic}></Quiztopic>)
                 }
-
             </div>
         </div>
     );
