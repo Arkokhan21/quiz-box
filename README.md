@@ -10,4 +10,4 @@
 3. This app has a chart on total quiz. There is also a blog site.
 
 
-## Live Site Link:
+## Live Site Link: https://quiz-box-7f304c.netlify.app
