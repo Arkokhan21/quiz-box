@@ -1,12 +1,12 @@
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.css';
-import Blog from './Blog/Blog';
-import Errorpage from './Errorpage/Errorpage';
-import Home from './Home/Home';
-import Main from './Layout/Main';
-import Statistics from './Statistics/Statistics';
-import Topicdetails from './Topicdetails/Topicdetails';
+import Blog from './Components/Blog/Blog';
+import Errorpage from './Components/Errorpage/Errorpage';
+import Home from './Components/Home/Home';
+import Main from './Components/Layout/Main';
+import Statistics from './Components/Statistics/Statistics';
+import Topicdetails from './Components/Topicdetails/Topicdetails';
 
 function App() {
 
@@ -50,7 +50,7 @@ function App() {
   ])
 
   return (
-    <div className="App">
+    <div>
       <RouterProvider router={router}></RouterProvider>
     </div>
   );

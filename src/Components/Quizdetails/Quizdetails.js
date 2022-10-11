@@ -17,15 +17,15 @@ const Quizdetails = ({ question }) => {
     }
 
     return (
-        <div className='shadow-xl p-10 m-auto w-7/12 mb-20 relative'>
+        <div className='shadow-xl p-10 m-auto w-7/12 mb-20 text-center'>
 
-            <EyeIcon onClick={notify} className="h-6 w-6 text-violet-500 absolute top-15 right-20 cursor-pointer" />
+            <EyeIcon onClick={notify} className="h-10 w-6 text-violet-500 cursor-pointer" />
             <ToastContainer />
 
-            <h2 className='mb-5'>{question.question}</h2>
+            <h2 className='mb-5 font-bold text-indigo-500'>Quiz: {question.question.slice(3, -4)}</h2>
             {
                 question.options.map(option =>
-                    <p className='border-2 border-violet-200 mb-5 p-5 w-3/6 m-auto'>
+                    <p className='border-2 border-violet-200 mb-5 p-5 w-3/6 m-auto font-bold text-violet-400'>
                         <input onClick={() => notifyResult(option)} type="radio" name="option" id="option" /> {option}
                     </p>)
             }
